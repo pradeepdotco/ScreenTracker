@@ -76,3 +76,10 @@
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
+
+/* Basic Styles for the Sections */
+
+#searchContainer {
+  background-color: #f8f8f8;
+}
+
