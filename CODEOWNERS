@@ -1,6 +1,0 @@
-# This is a CODEOWNERS file
-# It defines individuals or teams responsible for different areas of the project.
-# Lines starting with '#' are comments.
-
-# Default owner for everything in the repository
-*       @pradeepdotco
