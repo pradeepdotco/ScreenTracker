@@ -7,11 +7,50 @@
   -moz-user-select: none;
   user-select: none;
 }
-
+#navbarHeader .list-unstyled > li > a:hover {
+  color: #e9760b !important;
+  background-color: transparent;
+}
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+
+
+.navbar-nav .nav-item {
+  color: #faf9f8 !important;
+  background-color: transparent;
+  display:inline-block;
+  justify-content: space-between;
+  align-items: space-between;
+  padding: 0.5rem 1rem;
+
+}
+
+.navbar-nav > li > a:hover {
+  color: #0be942 !important;
+  background-color: transparent;
+  display:inline-block;
+  justify-content: space-between;
+}
+#navbarHeader .list-unstyled > li > a:hover {
+  color: #e9760b !important;
+  background-color: transparent;
+}
+ 
+
+
+
+
+
+
+
+}
+.narbar-nav{
+  text-decoration: none;
+}
+.nar-link{
+  text-decoration: none;
 }
 
 .b-example-divider {

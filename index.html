@@ -13,10 +13,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
     />
-
+     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/css/style.css" rel="stylesheet" />
 
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -118,7 +118,7 @@
       <div class="collapse text-bg-dark" id="navbarHeader">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
+            <div class="col-sm-9 col-md-7 py-5">
               <h4>Welcome to ScreenTracker</h4>
               <p class="text-body-secondary">
                 With ScreenTracker, you can easily keep track of titles you're
@@ -129,7 +129,7 @@
               </p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
-              <h4>My List</h4>
+              <h4>My Account</h4>
               <ul class="list-unstyled">
                 <li><a href="#" class="text-white">Currently Watching</a></li>
                 <li><a href="#" class="text-white">Watched</a></li>
@@ -162,36 +162,55 @@
             </svg>
             <strong>ScreenTracker</strong>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarHeader"
-            aria-controls="navbarHeader"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        
+
+        <div class="navbar navbar-expand" id="navbarResponsive">
+          <ul class="navbar-nav mb-lg-8 align-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Trending</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Movies</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Full Library</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Watched</strong></a>
+            </li>
+            <li class = "nav-item">
+              <a class = "avbar-toggler" href = "#" role ="button"
+                    
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                  <span class="navbar-toggler-icon"></span>
+              </a>
         </div>
-      </div>
+       </div>
     </header>
 
     <main>
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
+      
+      <!--  jumbotron -->
+      <div class="container-fluid ">
+        <div class="container-fluid p-8 mb-4 bg-body-tertiary rounded-3.masthead">
+          <div class=" col-lg">
             <img
               src="./assets/media/screentracker-shows.jpg"
-              class="d-block mx-lg-auto img-fluid"
+              background-size="cover"
+              class=" mx-lg"
               alt="Bootstrap Themes"
-              width="700"
-              height="500"
+              width=100%
+              height=100%
               loading="lazy"
             />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+          
+          <div class="col-lg-7" >
+            <h1 class="display-5 fw-bold text-body-emphasis JumboCopy">
               Keep Track of your Watching Library
             </h1>
             <p class="lead">
@@ -201,7 +220,7 @@
               titles you're eager to watch and those you've already enjoyed.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4 " color="black">
                 My Library
               </button>
               <button
@@ -212,9 +231,12 @@
               </button>
             </div>
           </div>
+          </div>
         </div>
       </div>
-
+<br>
+<br>
+<br>
       <section class="py-5 text-center container" id="searchContainer">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
@@ -746,16 +768,30 @@
     <footer class="text-body-secondary py-5">
       <div class="container">
         <p class="float-end mb-1">
-          <a href="#">Back to top</a>
+          <a href="#" color ="white">Back to top</a>
         </p>
-        <p class="mb-1">
-          Album example is &copy; Bootstrap, but please download and customize
-          it for yourself!
+        <p class="mb-1" color="white">
+          &copy; 2024 Screen Tracker
         </p>
         <p class="mb-0">
-          New to Bootstrap? <a href="/">Visit the homepage</a> or read our
-          <a href="../getting-started/introduction/">getting started guide</a>.
+          New to Screen Tracker? <a href="email@screentracker.com">Contact us </a> 
         </p>
+        <ul class = "nav col-md-4 justify-content-center list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg class="bi" width="24" height="24">
+                <use xlink:href="@twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg class="bi" width="24" height="24">
+                <use xlink:href="@twitter"></use>
+              </svg>
+            </a>
+          </li>
+
       </div>
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
