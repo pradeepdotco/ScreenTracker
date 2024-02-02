@@ -232,17 +232,35 @@
                       type="search"
                       placeholder="Start searching here..."
                       aria-label="Search"
+                      id="searchValue"
                     />
-                    <button class="btn btn-primary my-2 me-2" type="submit">
-                      Search Movies
+                    <button class="btn btn-primary my-2 me-2" type="submit" id="searchBtn" data-bs-toggle="modal" data-bs-target="#searchResultsModal">
+                      Search Movies/Series
                     </button>
-                    <button class="btn btn-secondary my-2" type="submit">
+                    <div class="modal fade" id="searchResultsModal" tabindex="-1" aria-labelledby="searchResultsModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" id='modal-body'>
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <button class="btn btn-secondary my-2" type="submit">
                       Search Series
-                    </button>
+                    </button> -->
                   </div>
                 </div>
               </form>
-            </div>
+            </div> 
           </div>
         </div>
       </section>
@@ -742,6 +760,9 @@
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="app.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/movieinfo.js"></script>
+    <script src="https://kit.fontawesome.com/86326a2a1a.js" crossorigin="anonymous"></script>
   </body>
+
 </html>
