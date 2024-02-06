@@ -66,7 +66,7 @@ async function fetchTopContent(category) {
 async function renderTopContent(category) {
   const topContent = await fetchTopContent(category);
 
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 12; i++) {
     const content = topContent[i - 1];
     const cardElement = document.getElementById(`card${i}`);
 

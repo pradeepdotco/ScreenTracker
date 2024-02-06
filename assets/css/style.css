@@ -99,7 +99,13 @@
   height: 225px;
   margin: 0 auto;
 }
-
+h5.card-title {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 100px;
+}
 
 
 
