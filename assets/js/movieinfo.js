@@ -101,8 +101,22 @@ renderTopContent('series');
 });
 // view the overview of the movie
 function toggleOverview(cardId) {
-const overviewElement = document.querySelector(`#${cardId} .card-text.overview`);
-overviewElement.style.display = overviewElement.style.display === 'none' ? 'block' : 'none';
+  const cardElement = document.getElementById(cardId);
+  const overviewElement = cardElement.querySelector('.card-text.overview');
+  const editButtonGroup = cardElement.querySelector('.btn-group');
+
+  if (overviewElement.style.display === 'none') {
+    overviewElement.style.display = 'block';
+    editButtonGroup.style.display = 'flex'; 
+  } else {
+    overviewElement.style.display = 'none';
+    editButtonGroup.style.display = 'none';
+  }
+}
+
+function addToList(cardId) {
+  // Buraya eklenecek işlemler
+  console.log('Added to List:', cardId);
 }
 
 window.onload = renderMovieCards;
