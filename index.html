@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
   <head>
-    <script src="./assets/js/color-modes.js"></script>
+    <!-- <script src="./assets/js/color-modes.js"></script> -->
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -241,7 +241,7 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Movie Search Results</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body" id='modal-body'>
@@ -249,7 +249,7 @@
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-primary" id='save-changes-btn'>Save changes</button>
                           </div>
                         </div>
                       </div>
@@ -268,18 +268,30 @@
       <section class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-7 col-md-8 mx-auto">
-            <h2 class="fw-light">My Watch Library</h2>
-            <p class="lead text-body-secondary">
+            <h2 class="fw-light" id="w-l-heading">My Watch Library</h2>
+            <p class="lead text-body-secondary" id="w-l-info">
               Start adding movies and shows to build your library.
             </p>
 
-            <div class="container" id="displayContainer">
-              <!-- Added movies and shows will be displayed here -->
+            <div class="container-fluid flexContainer d-flex flex-wrap justify-content-center align-items-center" id="displayContainer">
+              <!-- Added movies and shows will be displayed here --->     
             </div>
+            <!-- <div id="displayContainer" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner"></div>
+              <a class="carousel-control-prev" href="#displayContainer" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#displayContainer" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div> -->
+             
 
-            <p>
-              <a href="#" class="btn btn-primary my-2">Add More Movies</a>
-              <a href="#" class="btn btn-secondary my-2">Remove</a>
+            <p id="watch-library-button">
+              <a href="#" class="btn btn-primary my-2">View Library</a>
+              <!-- <a href="#" class="btn btn-secondary my-2">Remove</a> -->
             </p>
           </div>
         </div>
@@ -760,7 +772,7 @@
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="./assets/js/app.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
     <script src="./assets/js/movieinfo.js"></script>
     <script src="https://kit.fontawesome.com/86326a2a1a.js" crossorigin="anonymous"></script>
   </body>
