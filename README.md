@@ -20,21 +20,19 @@ Track what's on your screen - movies, series and your watching library.
 
 * using Bootstrap;
 * using jquery and fetch;
-* Use two server side APIs - OMDB and TMDB API for generating the movie's data and rating;
+* Use two server side APIs - OMDB API for generating the movie's data and rating; And OMDP for searching the movie with Modal
 * using "for loop" and if statement;
 * using Modal to show the search result of the movies 
-* using addeventListener and stored in event in local storage
+* using addeventListener and stored in event in client-side storage
 * Mobile responsive
 
 
 
 ## Usage 
 Link: https://....
-* showed the result there.
 
-!image 
 
-*Showing how to save the watching movies in local storage:
+*Showing how to save the watched movies in client-side storage:
 ![Alt text](image-1.png)
 
 
@@ -52,7 +50,7 @@ https://docs.google.com/presentation/d/1YJc7BPABv2m7oD1i2VsH9hNvQHjYbDpo/edit#sl
 ## Credits
 
 Very graceful to have below teammate and TA for working the codes together;
-Thanks for our teammate: Predeep, Ozen Aysegul, Irtiza S and Mei Wong
+Thanks for our teammates: Predeep Singh, Ozen Aysegul, Irtiza Safdar and Mei Wong
 
 
 
@@ -69,6 +67,7 @@ N/A
 ## Features
 
 * showed the result there.
+
 
 PIC
 
