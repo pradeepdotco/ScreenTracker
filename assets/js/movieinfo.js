@@ -35,14 +35,9 @@ searchMoviesBtn.addEventListener('click', function(e) {
         let movieDiv = document.createElement('div');
         movieDiv.innerHTML = `
           <div class='card d-flex justify-content-center align-items-center'>
-            ${item.Title}
+            <h4>${item.Title}</h4>
             <img class='img-formatting' src='${item.Poster !== 'N/A' ? item.Poster : defaultImageURL}' alt='${item.Title}'>
-            <p>Plot: ${item.Plot}</p>
-            <p>Ratings:</p>
-
-            <button id='${item.imdbID}' class='btn fa-large fa-bookmark' type='submit' value='${item.imdbID}'>
-
-            </button>
+            <button id='${item.imdbID}' class='btn fa-large fa-bookmark' type='submit' value='${item.imdbID}'></button>
           </div>
         `;
         movieContainer.append(movieDiv);
@@ -62,6 +57,32 @@ searchMoviesBtn.addEventListener('click', function(e) {
     })
     .catch((err) => console.log(err));
 });
+
+
+function addToList(imdbID, title, poster, plot, tmdbRating) {
+  // Check if the movie is already in the watch library
+  if (savedmovies.some(movie => movie.imdbID === imdbID)) {
+    alert('This movie is already in your watch library.');
+    return;
+  }
+
+  // Create a movie object
+  const movie = {
+    imdbID: imdbID,
+    Title: title,
+    Poster: poster,
+    Plot: plot,
+    Ratings: [{ Source: 'TMDB', Value: tmdbRating }]
+  };
+
+  // Save the movie to local storage
+  savedmovies.push(movie);
+  savedmovies = checkDuplicates(savedmovies);
+  localStorage.setItem('savedmovies', JSON.stringify(savedmovies));
+
+  // Render the updated watch library
+  renderSavedMovie();
+}
 
 watchLibraryBtn.addEventListener('click', function() {
   showWatchLibrary();
@@ -94,11 +115,12 @@ function renderSavedMovie() {
           lead-in to additional content. This content is a little bit
           longer.
         </p>
+        <p>TMDB Rating: ${movie.Ratings && movie.Ratings[0] ? movie.Ratings[0].Value : 'N/A'}</p>
         <button class='btn btn-primary' onclick="removeMovie('${movie.imdbID}')">Remove</button>
       </div>`;
 
     watchLibraryContainer.appendChild(savedmovieDiv);
-  });
+  })  
 }
 
 function removeMovie(imdbID) {
@@ -140,8 +162,10 @@ async function renderTopContent(category) {
   const topContent = await fetchTopContent(category);
   for (let i = 1; i <= 12; i++) {
     const content = topContent[i - 1];
+    let overview = content.overview;
+    overview = overview.replace("'", "");
+    console.log(overview)
     const cardElement = document.getElementById(`card${i}`);
-    let overview = content.overview.replace("'", "")
     const cardContent = `
       <div class="col-md-4 mb-4">
         <div class="card shadow-sm" style="width: 12rem;">
@@ -180,4 +204,4 @@ function toggleOverview(cardId) {
   overviewElement.style.display = overviewElement.style.display === 'none' ? 'block' : 'none';
 }
 
-// window.onload = renderMovieCards;
+ window.onload = renderMovieCards;
