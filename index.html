@@ -148,9 +148,9 @@
             <div class="col-sm-4 offset-md-1 py-4">
               <h4>My List</h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Currently Watching</a></li>
-                <li><a href="#" class="text-white">Watched</a></li>
-                <li><a href="#" class="text-white">Full Library</a></li>
+                <li><a href="#library" class="text-white">Currently Watching</a></li>
+                <li><a href="#library" class="text-white">Watched</a></li>
+                <li><a href="#library" class="text-white">Full Library</a></li>
               </ul>
             </div>
           </div>
@@ -182,7 +182,7 @@
 
     <main>
       <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="trending-section">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
               src="./assets/media/screentracker-shows.jpg"
@@ -211,7 +211,7 @@
                 type="button"
                 class="btn btn-outline-secondary btn-lg px-4"
               >
-                Currently Watching
+                <a href='#trending-section' id="trending-link">What's Trending?</a>
               </button>
             </div>
           </div>
@@ -293,7 +293,7 @@
         </div>
       </section>
 
-      <section class="py-5 text-center" id="">
+      <section class="py-5 text-center" id="library">
         <div class="row py-lg-5">
           <div class="col-lg-7 col-md-8 mx-auto">
             <h2 class="fw-light" id="w-l-heading">My Watch Library</h2>
