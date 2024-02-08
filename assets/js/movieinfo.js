@@ -8,7 +8,7 @@ const watchLibraryheading = document.getElementById('w-l-heading');
 const watchLibrarySlogan = document.getElementById('w-l-info');
 const saveChangesBtn = document.getElementById('save-changes-btn');
 
-const defaultImageURL = 'defaultmovieimage.jpg';
+const defaultImageURL = './assets/media/defaultmovieimage.jpg';
 // Retrieve saved movies from local storage
 var savedmovies = JSON.parse(localStorage.getItem('savedmovies')) || [];
 var searchValue = document.getElementById('searchValue');
@@ -84,10 +84,10 @@ function addToList(imdbID, title, poster, plot, tmdbRating) {
   renderSavedMovie();
 }
 
-watchLibraryBtn.addEventListener('click', function() {
-  showWatchLibrary();
-  renderSavedMovie();
-});
+// watchLibraryBtn.addEventListener('click', function() {
+//   showWatchLibrary();
+//   renderSavedMovie();
+// });
 
 saveChangesBtn.addEventListener('click', function() {
   var modal = bootstrap.Modal.getInstance(searchResultsModal); // Retrieve the modal instance
