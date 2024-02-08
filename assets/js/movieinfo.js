@@ -95,7 +95,37 @@ saveChangesBtn.addEventListener('click', function() {
   modal.hide();
 });
 
+// function renderSavedMovie() {
+//   // Clear existing content
+//   watchLibraryContainer.innerHTML = '';
+
+//   savedmovies.forEach(function(movie) {
+//     let savedmovieDiv = document.createElement('div');
+//     savedmovieDiv.className = 'card mb-3';
+//     savedmovieDiv.style.maxWidth = '300px';
+
+//     // Use the movie poster if available, otherwise use the default image
+//     const imageUrl = movie.Poster !== 'N/A' ? movie.Poster : defaultImageURL;
+
+//     savedmovieDiv.innerHTML =
+//       `<img src='${imageUrl}' class='card-img-top' alt='${movie.Title}'>
+//       <div class='card-body'>
+//         <h5 class='card-title'>${movie.Title}</h5>
+//         <p class='card-text'>
+//           ${movie.Plot || 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'}
+//         </p>
+//         <p>TMDB Rating: ${movie.Ratings && movie.Ratings[0] ? movie.Ratings[0].Value : 'N/A'}</p>
+//         <button class='btn btn-primary' onclick="removeMovie('${movie.imdbID}')">Remove</button>
+//       </div>`;
+
+//     watchLibraryContainer.appendChild(savedmovieDiv);
+//   })  
+// }
+
 function renderSavedMovie() {
+  // Fetch missing images before rendering
+  fetchMissingImages();
+
   // Clear existing content
   watchLibraryContainer.innerHTML = '';
 
@@ -105,7 +135,7 @@ function renderSavedMovie() {
     savedmovieDiv.style.maxWidth = '300px';
 
     // Use the movie poster if available, otherwise use the default image
-    const imageUrl = movie.Poster !== 'N/A' ? movie.Poster : defaultImageURL;
+    const imageUrl = movie.imageUrl || (movie.Poster !== 'N/A' ? movie.Poster : defaultImageURL);
 
     savedmovieDiv.innerHTML =
       `<img src='${imageUrl}' class='card-img-top' alt='${movie.Title}'>
@@ -119,7 +149,7 @@ function renderSavedMovie() {
       </div>`;
 
     watchLibraryContainer.appendChild(savedmovieDiv);
-  })  
+  });
 }
 
 function removeMovie(imdbID) {
@@ -204,3 +234,33 @@ function toggleOverview(cardId) {
 }
 
 // window.onload = renderMovieCards;
+
+async function fetchMissingImages() {
+  const apiKey = 'c765a205274e5ae2e4ea7651076c9be2';
+
+  for (const movie of savedmovies) {
+    // Check if the movie has a poster path and if the image has been displayed
+    if (movie.Poster !== 'N/A' && !movie.imageDisplayed) {
+      try {
+        // Fetch the image from TMDB
+        // const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${movie.Title}&page=1&include_adult=false`);
+        const response = await fetch(`https://image.tmdb.org/t/p/w500${movie.Poster}`)
+        if (response.ok) {
+          const imageUrl = `https://image.tmdb.org/t/p/w500${movie.Poster}`;
+          // const movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query${movie.Title}&page=1&include_adult=false`
+          console.log(movieUrl)
+          // Set the image URL in your movie object or handle it as needed
+          // movie.imageUrl = imageUrl;
+          movie.imageDisplayed = true; // Mark the image as displayed
+          console.log(`Fetched image for ${movie.Title}`);
+          // Render the updated watch library after fetching the image
+          renderSavedMovie();
+        } else {
+          console.error(`Failed to fetch image for ${movie.Title}`);
+        }
+      } catch (error) {
+        console.error(`Error fetching image for ${movie.Title}: ${error.message}`);
+      }
+    }
+  }
+}
