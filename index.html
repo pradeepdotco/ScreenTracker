@@ -17,11 +17,7 @@
     <link href="./assets/css/style.css" rel="stylesheet" />
 
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -261,7 +257,7 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Modal title
+                              Movie Search Results
                             </h1>
                             <button
                               type="button"
@@ -279,7 +275,7 @@
                             >
                               Close
                             </button>
-                            <button type="button" class="btn btn-primary">
+                            <button type="button" class="btn btn-primary" id="save-changes-btn">
                               Save changes
                             </button>
                           </div>
@@ -297,11 +293,11 @@
         </div>
       </section>
 
-      <section class="py-5 text-center container">
+      <section class="py-5 text-center" id="">
         <div class="row py-lg-5">
           <div class="col-lg-7 col-md-8 mx-auto">
-            <h2 class="fw-light">My Watch Library</h2>
-            <p class="lead text-body-secondary">
+            <h2 class="fw-light" id="w-l-heading">My Watch Library</h2>
+            <p class="lead text-body-secondary" id="w-l-info">
               Start adding movies and shows to build your library.
             </p>
 
@@ -309,8 +305,8 @@
               <!-- Added movies and shows will be displayed here -->
             </div>
 
-            <p>
-              <a href="#" class="btn btn-primary my-2">View My Library</a>
+            <p id="w-l-button-wrapper">
+              <a href="#" class="btn btn-primary my-2" id="w-l-button">View My Library</a>
             </p>
           </div>
         </div>
@@ -319,14 +315,8 @@
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="./assets/media/screentracker-trending.jpg"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
+            <img src="./assets/media/screentracker-shows.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+              width="700" height="500" loading="lazy" />
           </div>
           <div class="col-lg-6">
             <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
@@ -336,443 +326,32 @@
               Get inspiration from the currently trending movies and shows.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                Top Movies
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
-              >
-                Top Series
-              </button>
+              <button id="topMoviesButton" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Top Movies</button>
+              <button id="topSeriesButton" type="button" class="btn btn-primary btn-lg px-4">Top Series</button>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="album py-5 bg-body-tertiary">
+      <div class="album py-5 bg-body-tertiary ">
         <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="row">
+            <div id="card1" class="col movie-card"></div>
+            <div id="card2" class="col movie-card"></div>
+            <div id="card3" class="col movie-card"></div>
+            <div id="card4" class="col movie-card"></div>
+            <div id="card5" class="col movie-card"></div>
+            <div id="card6" class="col movie-card"></div>
+            <div id="card7" class="col movie-card"></div>
+            <div id="card8" class="col movie-card"></div>
+            <div id="card9" class="col movie-card"></div>
+            <div id="card10" class="col movie-card"></div>
+            <div id="card11" class="col movie-card"></div>
+            <div id="card12" class="col movie-card"></div>
           </div>
         </div>
       </div>
     </main>
+    
 
     <div class="container">
       <footer class="py-5">
@@ -846,125 +425,42 @@
           </div>
 
           <div class="col-md-5 offset-md-1 mb-3">
-            <h5>Subscribe for latest inspiration</h5>
-            <p>
-              Get a monthly digest of what's popular and trending with our
-              users.
-            </p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <div id="mc_embed_shell">
-                <div id="mc_embed_signup">
-                  <form
-                    action="https://commerceism.us4.list-manage.com/subscribe/post?u=e309bdedb2b3cfd0a00940575&amp;id=ae356e3509&amp;f_id=00998febf0"
-                    method="post"
-                    id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form"
-                    class="validate"
-                    target="_blank"
-                  >
+            <form id="subscribe-form">
+              <h5>Subscribe for latest inspiration</h5>
+              <p>
+                Get a monthly digest of what's popular and trending with our
+                users.
+              </p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <div id="mc_embed_shell">
+              
+            <div id="mc_embed_signup">
+                <form action="https://commerceism.us4.list-manage.com/subscribe/post?u=e309bdedb2b3cfd0a00940575&amp;id=ae356e3509&amp;f_id=00998febf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                     <div id="mc_embed_signup_scroll">
-                      <div class="mc-field-group">
-                        <label for="mce-EMAIL"
-                          >Email Address <span class="asterisk">*</span></label
-                        ><input
-                          type="email"
-                          name="EMAIL"
-                          class="required email"
-                          id="mce-EMAIL"
-                          required=""
-                          value=""
-                        />
-                      </div>
-                      <div id="mce-responses" class="clear foot">
-                        <div
-                          class="response"
-                          id="mce-error-response"
-                          style="display: none"
-                        ></div>
-                        <div
-                          class="response"
-                          id="mce-success-response"
-                          style="display: none"
-                        ></div>
-                      </div>
-                      <div
-                        aria-hidden="true"
-                        style="position: absolute; left: -5000px"
-                      >
-                        /* real people should not fill this in and expect good
-                        things - do not remove this or risk form bot signups */
-                        <input
-                          type="text"
-                          name="b_e309bdedb2b3cfd0a00940575_ae356e3509"
-                          tabindex="-1"
-                          value=""
-                        />
-                      </div>
-                      <div class="optionalParent">
-                        <div class="clear foot">
-                          <input
-                            type="submit"
-                            name="subscribe"
-                            id="mc-embedded-subscribe"
-                            class="button"
-                            value="Subscribe"
-                          />
-                          <p style="margin: 0px auto">
-                            <a
-                              href="http://eepurl.com/iJFL62"
-                              title="Mailchimp - email marketing made easy and fun"
-                              ><span
-                                style="
-                                  display: inline-block;
-                                  background-color: transparent;
-                                  border-radius: 4px;
-                                "
-                                ><img
-                                  class="refferal_badge"
-                                  src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                                  alt="Intuit Mailchimp"
-                                  style="
-                                    width: 220px;
-                                    height: 40px;
-                                    display: flex;
-                                    padding: 2px 0px;
-                                    justify-content: center;
-                                    align-items: center;
-                                  " /></span
-                            ></a>
-                          </p>
-                        </div>
-                      </div>
+                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
                     </div>
-                  </form>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                    <input type="text" name="b_e309bdedb2b3cfd0a00940575_ae356e3509" tabindex="-1" value="">
                 </div>
-                <script
-                  type="text/javascript"
-                  src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-                ></script>
-                <script type="text/javascript">
-                  (function ($) {
-                    window.fnames = new Array();
-                    window.ftypes = new Array();
-                    fnames[0] = "EMAIL";
-                    ftypes[0] = "email";
-                    fnames[1] = "FNAME";
-                    ftypes[1] = "text";
-                    fnames[2] = "LNAME";
-                    ftypes[2] = "text";
-                    fnames[3] = "ADDRESS";
-                    ftypes[3] = "address";
-                    fnames[4] = "PHONE";
-                    ftypes[4] = "phone";
-                    fnames[5] = "BIRTHDAY";
-                    ftypes[5] = "birthday";
-                  })(jQuery);
-                  var $mcj = jQuery.noConflict(true);
-                </script>
-              </div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                            <p style="margin: 0px auto;"><a href="http://eepurl.com/iJFL62" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
             </div>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+                </div>
+              </div>            
           </div>
         </div>
+        
 
         <div
           class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
@@ -976,33 +472,29 @@
                 class="link-body-emphasis"
                 href="https://pradeepdotco.github.io/ScreenTracker/#x"
                 ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#twitter" /></svg
-              ></a>
+                  <use xlink:href="#twitter" /></svg></a>
             </li>
             <li class="ms-3">
               <a
                 class="link-body-emphasis"
                 href="https://pradeepdotco.github.io/ScreenTracker/#insta"
                 ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#instagram" /></svg
-              ></a>
+                  <use xlink:href="#instagram" /></svg></a>
             </li>
             <li class="ms-3">
               <a
                 class="link-body-emphasis"
                 href="https://pradeepdotco.github.io/ScreenTracker/#fb"
                 ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#facebook" /></svg
-              ></a>
+                  <use xlink:href="#facebook" /></svg></a>
             </li>
           </ul>
         </div>
       </footer>
-    </div>
+    </div> 
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="./assets/js/app.js"></script>
     <script src="./assets/js/movieinfo.js"></script>
     <script
       src="https://kit.fontawesome.com/86326a2a1a.js"
