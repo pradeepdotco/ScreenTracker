@@ -3,7 +3,8 @@ const searchMoviesBtn = document.getElementById('searchBtn');
 const searchResultsModal = document.getElementById('searchResultsModal');
 
 const watchLibraryContainer = document.getElementById('displayContainer');
-const watchLibraryBtn = document.getElementById('watch-library-button');
+const watchLibraryBtn = document.getElementById('w-l-button');
+const watchLibraryBtnWrapper = document.getElementById('w-l-button-wrapper');
 const watchLibraryheading = document.getElementById('w-l-heading');
 const watchLibrarySlogan = document.getElementById('w-l-info');
 const saveChangesBtn = document.getElementById('save-changes-btn');
@@ -37,7 +38,7 @@ searchMoviesBtn.addEventListener('click', function(e) {
           <div class='card d-flex justify-content-center align-items-center'>
             <h4>${item.Title}</h4>
             <img class='img-formatting' src='${item.Poster !== 'N/A' ? item.Poster : defaultImageURL}' alt='${item.Title}'>
-            <button id='${item.imdbID}' class='btn fa-large fa-bookmark' type='submit' value='${item.imdbID}'></button>
+            <button id='${item.imdbID}' class='btn btn-primary' type='submit' value='${item.imdbID}'>Bookmark</button>
           </div>
         `;
         movieContainer.append(movieDiv);
@@ -84,10 +85,10 @@ function addToList(imdbID, title, poster, plot, tmdbRating) {
   renderSavedMovie();
 }
 
-// watchLibraryBtn.addEventListener('click', function() {
-//   showWatchLibrary();
-//   renderSavedMovie();
-// });
+watchLibraryBtn.addEventListener('click', function() {
+  showWatchLibrary();
+  renderSavedMovie();
+});
 
 saveChangesBtn.addEventListener('click', function() {
   var modal = bootstrap.Modal.getInstance(searchResultsModal); // Retrieve the modal instance
@@ -125,21 +126,21 @@ function renderSavedMovie() {
 
 function removeMovie(imdbID) {
   // Remove the movie from savedmovies array
-  savedmovies = savedmovies.filter((movie) => movie.imdbID !== imdbID);
+  savedmovies = savedmovies.filter((movie) => movie.imdbID !== imdbID)
   // Update local storage
-  localStorage.setItem('savedmovies', JSON.stringify(savedmovies));
+  localStorage.setItem('savedmovies', JSON.stringify(savedmovies))
   // Render the updated list
-  renderSavedMovie();
+  renderSavedMovie()
 }
 
 function checkDuplicates(arr) {
-  return arr.filter((value, index) => arr.findIndex((movie) => movie.imdbID === value.imdbID) === index);
+  return arr.filter((value, index) => arr.findIndex((movie) => movie.imdbID === value.imdbID) === index)
 }
 
 function showWatchLibrary() {
-  watchLibraryheading.classList.add('hide');
-  watchLibrarySlogan.classList.add('hide');
-  watchLibraryBtn.classList.add('hide');
+  watchLibraryheading.classList.add('hide')
+  watchLibrarySlogan.classList.add('hide')
+  watchLibraryBtnWrapper.classList.add('hide')
 }
 
 // TMDb API Key
@@ -162,7 +163,7 @@ async function renderTopContent(category) {
   const topContent = await fetchTopContent(category);
   for (let i = 1; i <= 12; i++) {
     const content = topContent[i - 1];
-    let overview = content.overview;
+    let overview = content.overview || '';
     overview = overview.replace("'", "");
     console.log(overview)
     const cardElement = document.getElementById(`card${i}`);
@@ -204,4 +205,4 @@ function toggleOverview(cardId) {
   overviewElement.style.display = overviewElement.style.display === 'none' ? 'block' : 'none';
 }
 
- window.onload = renderMovieCards;
+// window.onload = renderMovieCards;
