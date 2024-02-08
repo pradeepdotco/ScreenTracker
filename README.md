@@ -13,8 +13,10 @@ Here's a look at the ScreenTracker web application:
 
 ![ScreenTracker Website Preview](https://raw.githubusercontent.com/pradeepdotco/horiseon-accessible-website/main/assets/images/ScreenTracker-website-demo.jpg)
 
-[screentracker-demo-ezgif com-video-to-gif-converter](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/36f435d4-a866-4aca-a699-e4bbef90f6c8)
-[screentracker-demo-ezgif com-video-to-gif-converter (1)](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/6a2a002a-0fc8-40f7-8100-8adf8b553550)
+![screentracker-demo-ezgif com-video-to-gif-converter](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/36f435d4-a866-4aca-a699-e4bbef90f6c8)
+
+
+![screentracker-demo-ezgif com-video-to-gif-converter (1)](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/6a2a002a-0fc8-40f7-8100-8adf8b553550)
 
 ## 🌟 Features!
 
