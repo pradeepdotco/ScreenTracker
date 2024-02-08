@@ -47,7 +47,7 @@ ScreenTracker is designed to enhance your movie-watching experience by:
 - Keeping track of currently watched movies and facilitating easy searches.
 - Storing preferences and watchlists in local storage.
 - Displaying trending movies and their ratings.
-- Offering subscription functions and client email storage on a local server.
+- Offering subscriptions for our newsletter. 
 
 ## 📍 License
 
