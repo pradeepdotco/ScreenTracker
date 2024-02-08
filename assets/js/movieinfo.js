@@ -192,7 +192,7 @@ async function renderTopContent(category) {
   for (let i = 1; i <= 12; i++) {
     const content = topContent[i - 1];
     let overview = content.overview || '';
-    overview = overview.replace("'", "");
+    overview = overview.replace("'", " ");
     console.log(overview)
     const cardElement = document.getElementById(`card${i}`);
     const cardContent = `
