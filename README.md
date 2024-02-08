@@ -2,9 +2,8 @@
     <img width="55%" src="https://raw.githubusercontent.com/pradeepdotco/ScreenTracker/fca7fb278aa82026910b69f38bba111cd1b964fc/assets/media/screentracker-logo-dark.svg"> 
 </p>
 
-# 🎬 ScreenTracker Project
 
-## Overview
+## 🎬 ScreenTracker Overview
 
 Track what's on your screen - movies, series and your watching library.
 
