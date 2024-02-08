@@ -7,9 +7,13 @@
 
 Track what's on your screen - movies, series and your watching library.
 
+<img width="444" alt="Screenshot 2024-02-08 181441" src="https://github.com/pradeepdotco/ScreenTracker/assets/61486852/03603a50-eb22-4acf-b3f8-cdd30d95c3b0">
+
+
 ## 📷 Website Preview
 
 Here's a look at the ScreenTracker web application:
+
 
 
 ![ScreenTracker-KeepTrackofyourWatchingLibrary-ezgif com-video-to-gif-converter (1)](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/cd8d9584-a8c0-42fe-ac16-0dff29790b16)
