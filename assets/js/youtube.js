@@ -9,7 +9,7 @@ fetch(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetai
 
     <a target= "_blank" href="https://youtube.com/watch?v=${el.snippet.resourceId.videoId}" 
     class="yt-video">
-        <img src="${el.snippet.thumbnails.maxres.url}" alt="">
+        <img src="${el.snippet.thumbnails.maxres.url}" alt="" style= "width:100%">
         <h3>${el.snippet.title}</h3>
     </a>`
     });
