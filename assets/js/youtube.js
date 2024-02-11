@@ -15,4 +15,3 @@ fetch(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetai
     });
     console.log(data.items[0]);
 })
-

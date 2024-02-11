@@ -315,7 +315,42 @@
           </div>
         </div>
       </div>
-
+      <section class="py-5 text-center container" id="trailerContainer">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h2 class="fw-light">Watch Trailers</h2>
+            <p class="lead text-muted">
+              Explore movie and series trailers. Find the latest previews and enjoy!
+            </p>
+            <div class="container">
+              <form class="d-flex justify-content-center">
+                <div class="input-group">
+                  <div class="input-group align-items-center">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Enter movie or series name..."
+                      aria-label="Search"
+                      id="trailerInput"
+                    />
+                    <button
+                      class="btn btn-primary my-2 me-2"
+                      type="button"
+                      onclick="searchTrailer()"
+                      data-bs-toggle="modal"
+                      data-bs-target="#trailerResultsModal"
+                    >
+                      Search Trailers
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="videoContainer"></div>
+     </div>
+      </section>
       <section class="py-5 text-center" id="ytplayer">
         <div class="row py-lg-5">
           <div class="col-lg-7 col-md-8 mx-auto">
