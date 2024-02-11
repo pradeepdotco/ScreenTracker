@@ -16,14 +16,11 @@ Track what's on your screen - movies, series and your watching library.
 ## :camera: Website Preview
 
 Here's a look at the ScreenTracker web application:
+![ScreenTracker-KeepTrackofyourWatchingLibrary2-ezgif com-video-to-gif-converter](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/86d72a6e-4b8a-42f0-b11e-a7316b132af9)
+
+![ScreenTracker-KeepTrackofyourWatchingLibrary2-ezgif com-video-to-gif-converter (1)](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/0322919d-3bbe-4b75-9276-5bc662f0b17a)
 
 
-<p align="center" width="100%">
-    ![ScreenTracker-KeepTrackofyourWatchingLibrary](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/cd8d9584-a8c0-42fe-ac16-0dff29790b16)
-    ![ScreenTracker-KeepTrackofyourWatchingLibrary](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/6f331004-a1bc-4089-b425-2af2db391a17)
-    ![screentracker-demo](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/6a2a002a-0fc8-40f7-8100-8adf8b553550)
-    
-</p>
 
 
 ## :star2: Features
