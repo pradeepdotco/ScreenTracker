@@ -60,3 +60,4 @@ Distributed under the MIT License. See LICENSE for more information.
 ## Contact
 ScreenTracker Team
 Project Link: [https://pradeepdotco.github.io/ScreenTracker/](https://pradeepdotco.github.io/ScreenTracker/)
+Presentation: [https://docs.google.com/presentation/d/1YJc7BPABv2m7oD1i2VsH9hNvQHjYbDpo/edit#slide=id.p4]
