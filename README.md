@@ -59,5 +59,5 @@ Distributed under the MIT License. See LICENSE for more information.
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
 ## Contact
 ScreenTracker Team
-- **Project Link: [https://pradeepdotco.github.io/ScreenTracker/](https://pradeepdotco.github.io/ScreenTracker/)
-- **Presentation: [https://docs.google.com/presentation/d/1YJc7BPABv2m7oD1i2VsH9hNvQHjYbDpo/edit#slide=id.p4]
+- Project Link: [https://pradeepdotco.github.io/ScreenTracker/](https://pradeepdotco.github.io/ScreenTracker/)
+- Presentation: [https://docs.google.com/presentation/d/1YJc7BPABv2m7oD1i2VsH9hNvQHjYbDpo/edit#slide=id.p4](https://docs.google.com/presentation/d/1YJc7BPABv2m7oD1i2VsH9hNvQHjYbDpo/edit#slide=id.p4)
