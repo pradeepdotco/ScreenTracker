@@ -111,8 +111,8 @@
 }
 
 .img-formatting {
-  max-height: 200px;
   /* max-width:  */
+  max-height: 200px;
 }
 
 #trending-link {
@@ -129,12 +129,11 @@
   text-decoration: none;
 }
 
+
 #displayContainer {
   width: 100%;
-  overflow-x: scroll;
-  /* border: 1px solid black; */
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   text-align: center;
   /* white-space: nowrap; */
 
@@ -145,6 +144,9 @@
   /* height: 300px; */
   width: 100%;
 }
+
+
 /* Custom Styles for Subscribe Form */
 
 #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: px;}
+

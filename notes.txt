@@ -1,0 +1,13 @@
+Youtube
+api key: AIzaSyCAyX63BR9_5XS8jFhXxV4doIGhvajcZ7c
+channel ID: UCbuclcDeWIdggxEN0qR_usQ
+uploads ID: UUbuclcDeWIdggxEN0qR_usQ
+url: https://youtube.googleapis.com/youtube/v3/playlists?part=snippet&id=UUbuclcDeWIdggxEN0qR_usQ&maxResults=1&key=AIzaSyCAyX63BR9_5XS8jFhXxV4doIGhvajcZ7c
+
+
+https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails%2Csnippet&maxResults=1&playlistId=PLXLKdYUB-ACLTJJ8pJwnE2xb159JOHfar&key=AIzaSyCAyX63BR9_5XS8jFhXxV4doIGhvajcZ7c
+
+PLXLKdYUB-ACLTJJ8pJwnE2xb159JOHfar
+youtube video: https://youtu.be/eUEV4lhc6JU
+
+videoid:eUEV4lhc6JU
