@@ -14,9 +14,13 @@ Track what's on your screen - movies, series and your watching library.
 - [License](#:round_pushpin:-license)
 - [Contact](#contact)
 ## :camera: Website Preview
+
 Here's a look at the ScreenTracker web application:
+
 ![ScreenTracker-KeepTrackofyourWatchingLibrary](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/cd8d9584-a8c0-42fe-ac16-0dff29790b16)
+
 ![ScreenTracker-KeepTrackofyourWatchingLibrary](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/6f331004-a1bc-4089-b425-2af2db391a17)
+
 ![screentracker-demo](https://github.com/pradeepdotco/ScreenTracker/assets/61486852/6a2a002a-0fc8-40f7-8100-8adf8b553550)
 ## :star2: Features
 - **Create your Personalised Library:** Keeping track of currently watched movies and TV series.
