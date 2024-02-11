@@ -246,42 +246,7 @@
                     >
                       Search Movies/Series
                     </button>
-                    <div
-                      class="modal fade"
-                      id="searchResultsModal"
-                      tabindex="-1"
-                      aria-labelledby="searchResultsModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">
-                              Movie Search Results
-                            </h1>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body" id="modal-body">...</div>
-                          <div class="modal-footer">
-                            <button
-                              type="button"
-                              class="btn btn-secondary"
-                              data-bs-dismiss="modal"
-                            >
-                              Close
-                            </button>
-                            <button type="button" class="btn btn-primary" id="save-changes-btn">
-                              Save changes
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
                     <!-- <button class="btn btn-secondary my-2" type="submit">
                       Search Series
                     </button> -->
@@ -301,7 +266,7 @@
               Start adding movies and shows to build your library.
             </p>
 
-            <div class="container" id="displayContainer">
+            <div class="container container-fluid" id="displayContainer">
               <!-- Added movies and shows will be displayed here -->
             </div>
 
@@ -409,7 +374,7 @@
                 <a href="#" class="nav-link p-0 text-body-secondary">Movies</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Series</a>
+                <a href="#" c`lass="nav-link p-0 text-body-secondary">Series</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary"
@@ -493,9 +458,46 @@
       </footer>
     </div> 
 
+    <div
+    class="modal fade"
+    id="searchResultsModal"
+    tabindex="-1"
+    aria-labelledby="searchResultsModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Movie Search Results
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body" id="modal-body">...</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary" id="save-changes-btn">
+            Save changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="./assets/js/movieinfo.js"></script>
+    <script src="./assets/js/streamingplatforms.js"></script>
     <script
       src="https://kit.fontawesome.com/86326a2a1a.js"
       crossorigin="anonymous"
